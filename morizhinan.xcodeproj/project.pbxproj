@@ -1,0 +1,282 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		61C9B0D01580BCBF00B03480 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61C9B0CF1580BCBF00B03480 /* UIKit.framework */; };
+		61C9B0D21580BCBF00B03480 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61C9B0D11580BCBF00B03480 /* Foundation.framework */; };
+		61C9B0D41580BCBF00B03480 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61C9B0D31580BCBF00B03480 /* CoreGraphics.framework */; };
+		61C9B0D61580BCBF00B03480 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61C9B0D51580BCBF00B03480 /* CoreData.framework */; };
+		61C9B0DC1580BCBF00B03480 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 61C9B0DA1580BCBF00B03480 /* InfoPlist.strings */; };
+		61C9B0DE1580BCBF00B03480 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C9B0DD1580BCBF00B03480 /* main.m */; };
+		61C9B0E21580BCBF00B03480 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C9B0E11580BCBF00B03480 /* AppDelegate.m */; };
+		61C9B0E51580BCBF00B03480 /* morizhinan.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 61C9B0E31580BCBF00B03480 /* morizhinan.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		61C9B0CB1580BCBF00B03480 /* morizhinan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = morizhinan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		61C9B0CF1580BCBF00B03480 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		61C9B0D11580BCBF00B03480 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		61C9B0D31580BCBF00B03480 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		61C9B0D51580BCBF00B03480 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		61C9B0D91580BCBF00B03480 /* morizhinan-Info.plist */ = {isa = PBXFileReference; path = "morizhinan-Info.plist"; sourceTree = "<group>"; };
+		61C9B0DB1580BCBF00B03480 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		61C9B0DD1580BCBF00B03480 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		61C9B0DF1580BCBF00B03480 /* morizhinan-Prefix.pch */ = {isa = PBXFileReference; path = "morizhinan-Prefix.pch"; sourceTree = "<group>"; };
+		61C9B0E01580BCBF00B03480 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		61C9B0E11580BCBF00B03480 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		61C9B0E41580BCBF00B03480 /* morizhinan.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = morizhinan.xcdatamodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		61C9B0C81580BCBF00B03480 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61C9B0D01580BCBF00B03480 /* UIKit.framework in Frameworks */,
+				61C9B0D21580BCBF00B03480 /* Foundation.framework in Frameworks */,
+				61C9B0D41580BCBF00B03480 /* CoreGraphics.framework in Frameworks */,
+				61C9B0D61580BCBF00B03480 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		61C9B0C01580BCBF00B03480 = {
+			isa = PBXGroup;
+			children = (
+				61C9B0D71580BCBF00B03480 /* morizhinan */,
+				61C9B0CE1580BCBF00B03480 /* Frameworks */,
+				61C9B0CC1580BCBF00B03480 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		61C9B0CC1580BCBF00B03480 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				61C9B0CB1580BCBF00B03480 /* morizhinan.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		61C9B0CE1580BCBF00B03480 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61C9B0CF1580BCBF00B03480 /* UIKit.framework */,
+				61C9B0D11580BCBF00B03480 /* Foundation.framework */,
+				61C9B0D31580BCBF00B03480 /* CoreGraphics.framework */,
+				61C9B0D51580BCBF00B03480 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		61C9B0D71580BCBF00B03480 /* morizhinan */ = {
+			isa = PBXGroup;
+			children = (
+				61C9B0E01580BCBF00B03480 /* AppDelegate.h */,
+				61C9B0E11580BCBF00B03480 /* AppDelegate.m */,
+				61C9B0E31580BCBF00B03480 /* morizhinan.xcdatamodeld */,
+				61C9B0D81580BCBF00B03480 /* Supporting Files */,
+			);
+			path = morizhinan;
+			sourceTree = "<group>";
+		};
+		61C9B0D81580BCBF00B03480 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				61C9B0D91580BCBF00B03480 /* morizhinan-Info.plist */,
+				61C9B0DA1580BCBF00B03480 /* InfoPlist.strings */,
+				61C9B0DD1580BCBF00B03480 /* main.m */,
+				61C9B0DF1580BCBF00B03480 /* morizhinan-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		61C9B0CA1580BCBF00B03480 /* morizhinan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61C9B0E81580BCBF00B03480 /* Build configuration list for PBXNativeTarget "morizhinan" */;
+			buildPhases = (
+				61C9B0C71580BCBF00B03480 /* Sources */,
+				61C9B0C81580BCBF00B03480 /* Frameworks */,
+				61C9B0C91580BCBF00B03480 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = morizhinan;
+			productName = morizhinan;
+			productReference = 61C9B0CB1580BCBF00B03480 /* morizhinan.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		61C9B0C21580BCBF00B03480 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 61C9B0C51580BCBF00B03480 /* Build configuration list for PBXProject "morizhinan" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 61C9B0C01580BCBF00B03480;
+			productRefGroup = 61C9B0CC1580BCBF00B03480 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				61C9B0CA1580BCBF00B03480 /* morizhinan */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		61C9B0C91580BCBF00B03480 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61C9B0DC1580BCBF00B03480 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		61C9B0C71580BCBF00B03480 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61C9B0DE1580BCBF00B03480 /* main.m in Sources */,
+				61C9B0E21580BCBF00B03480 /* AppDelegate.m in Sources */,
+				61C9B0E51580BCBF00B03480 /* morizhinan.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		61C9B0DA1580BCBF00B03480 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				61C9B0DB1580BCBF00B03480 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		61C9B0E61580BCBF00B03480 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		61C9B0E71580BCBF00B03480 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		61C9B0E91580BCBF00B03480 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "morizhinan/morizhinan-Prefix.pch";
+				INFOPLIST_FILE = "morizhinan/morizhinan-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		61C9B0EA1580BCBF00B03480 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "morizhinan/morizhinan-Prefix.pch";
+				INFOPLIST_FILE = "morizhinan/morizhinan-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		61C9B0C51580BCBF00B03480 /* Build configuration list for PBXProject "morizhinan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61C9B0E61580BCBF00B03480 /* Debug */,
+				61C9B0E71580BCBF00B03480 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61C9B0E81580BCBF00B03480 /* Build configuration list for PBXNativeTarget "morizhinan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61C9B0E91580BCBF00B03480 /* Debug */,
+				61C9B0EA1580BCBF00B03480 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		61C9B0E31580BCBF00B03480 /* morizhinan.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				61C9B0E41580BCBF00B03480 /* morizhinan.xcdatamodel */,
+			);
+			currentVersion = 61C9B0E41580BCBF00B03480 /* morizhinan.xcdatamodel */;
+			path = morizhinan.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 61C9B0C21580BCBF00B03480 /* Project object */;
+}
