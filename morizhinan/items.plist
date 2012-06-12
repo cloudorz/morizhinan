@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>compass</key>
+	<dict>
+		<key>no</key>
+		<integer>1</integer>
+		<key>label</key>
+		<string>compass</string>
+		<key>name</key>
+		<string>指南针</string>
+		<key>price</key>
+		<string> ¥53.96</string>
+		<key>logo_url</key>
+		<string>http://img04.taobaocdn.com/bao/uploaded/i4/T1QvfdXiJXXXceY4wV_020708.jpg_sum.jpg</string>
+		<key>item_url</key>
+		<string>http://s.click.taobao.com/t_8?e=7HZ6jHSTZTY89q3fEG6tjadXz4g36VFRkQN5UBPxxRV3&amp;p=mm_10629908_0_0</string>
+	</dict>
+	<key>sleepingbag</key>
+	<dict>
+		<key>no</key>
+		<integer>2</integer>
+		<key>label</key>
+		<string>sleepingbag</string>
+		<key>name</key>
+		<string>睡袋</string>
+		<key>price</key>
+		<string> ¥54.88</string>
+		<key>logo_url</key>
+		<string>http://img04.taobaocdn.com/bao/uploaded/i8/T1Jme0XbVhXXbYI.w__081016.jpg_40x40.jpg</string>
+		<key>item_url</key>
+		<string>http://item.taobao.com/item.htm?id=14120513495&amp;ali_trackid=2:mm_10629908_0_0:1339397041_3z4_904631827</string>
+	</dict>
+	<key>knife</key>
+	<dict>
+		<key>no</key>
+		<integer>3</integer>
+		<key>label</key>
+		<string>knife</string>
+		<key>name</key>
+		<string>小刀</string>
+		<key>price</key>
+		<string> ¥138.00</string>
+		<key>logo_url</key>
+		<string>http://img03.taobaocdn.com/imgextra/i3/475413868/T2vgpZXd8bXXXXXXXX_!!475413868.jpg_40x40.jpg</string>
+		<key>item_url</key>
+		<string>http://s.click.taobao.com/t_8?e=7HZ6jHSTbIKq9wQlGVPR7l7kYTgID0XioarzQVi2vrP0XQ%3D%3D&amp;p=mm_10629908_0_0</string>
+	</dict>
+	<key>telescope</key>
+	<dict>
+		<key>no</key>
+		<integer>4</integer>
+		<key>label</key>
+		<string>telescope</string>
+		<key>name</key>
+		<string>望远镜</string>
+		<key>price</key>
+		<string> ¥138.60</string>
+		<key>logo_url</key>
+		<string>http://img03.taobaocdn.com/bao/uploaded/i7/T1y75YXi0lXXcwVOrX_115518.jpg_40x40.jpg</string>
+		<key>item_url</key>
+		<string>http://item.taobao.com/item.htm?id=13083059524&amp;ali_trackid=2:mm_10629908_0_0:1339397383_4z1_1959347774</string>
+	</dict>
+</dict>
+</plist>
