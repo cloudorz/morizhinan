@@ -52,6 +52,7 @@
     [df setTimeZone:[NSTimeZone defaultTimeZone]];
     [df setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
     self.date2012 = [df dateFromString:@"2012-12-21 23:59:59"];
+    [df release];
     
     [self updateCountDownLabels];
     

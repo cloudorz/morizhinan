@@ -64,7 +64,7 @@
     self.navigationItem.hidesBackButton = YES;
     self.navigationItem.leftBarButtonItem = [[[CustomBarButtonItem alloc] initBackBarButtonItemWithTarget:self action:@selector(backAction:)] autorelease];
 //    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"menubg.png"]];
-    self.tableView.backgroundView = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"menubg.png"]] autorelease];
+    self.tableView.backgroundView = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"skill_bg.png"]] autorelease];
 }
 
 -(void)backAction:(id)sender
@@ -121,7 +121,9 @@
         cell.btnL.tag = l;
      
         NSDictionary *skillL = [self.skills objectAtIndex:l];
-        // set pics TODO
+        [cell.btnL setImage:[UIImage imageNamed:[skillL objectForKey:@"logo"]] forState:UIControlStateNormal];
+        cell.titleL.text = [skillL objectForKey:@"title"];
+
         
     } else {
         cell.btnL.hidden = YES;
@@ -135,7 +137,9 @@
         cell.btnM.tag = m;
         
         NSDictionary *skillM = [self.skills objectAtIndex:m];
-        // set pics TODO
+        [cell.btnM setImage:[UIImage imageNamed:[skillM objectForKey:@"logo"]] forState:UIControlStateNormal];
+        cell.titleM.text = [skillM objectForKey:@"title"];
+
     } else {
         cell.btnM.hidden = YES;
         cell.btnM.enabled = NO;
@@ -148,7 +152,9 @@
         cell.btnR.tag = r;
         
         NSDictionary *skillR = [self.skills objectAtIndex:r];
-        // set pics TODO
+        [cell.btnR setImage:[UIImage imageNamed:[skillR objectForKey:@"logo"]] forState:UIControlStateNormal];
+        cell.titleR.text = [skillR objectForKey:@"title"];
+
     } else {
         cell.btnR.hidden = YES;
         cell.btnR.enabled = NO;

@@ -10,7 +10,7 @@
 #import "CustomBarButtonItem.h"
 
 @interface DetailWebViewController ()
-
+-(void)justifyBackNext;
 @end
 
 @implementation DetailWebViewController
@@ -19,6 +19,11 @@
 @synthesize contentWebView=_contentWebView;
 @synthesize url=_url;
 @synthesize loading=_loading;
+@synthesize controlBar=_controlBar;
+@synthesize prev=_prev;
+@synthesize next=_next;
+@synthesize stop=_stop;
+@synthesize refresh=_refresh;
 
 - (void)dealloc
 {
@@ -76,9 +81,26 @@
     }else {
         if (self.url != nil) {
             [self.contentWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.url]]];
+            self.controlBar.hidden = NO;
         }
     }
 
+    [self justifyBackNext];
+}
+
+-(void)justifyBackNext
+{
+    if (self.contentWebView.canGoBack) {
+        self.prev.enabled = YES;
+    } else {
+        self.prev.enabled = NO;
+    }
+    
+    if (self.contentWebView.canGoForward) {
+        self.next.enabled = YES;
+    } else {
+        self.next.enabled = NO;
+    }
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -90,11 +112,17 @@
 - (void)webViewDidStartLoad:(UIWebView *)webView
 {
     [self.loading startAnimating];
+    self.refresh.enabled = NO;
+    self.stop.enabled = YES;
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView
 {
     [self.loading stopAnimating];
+    self.refresh.enabled = YES;
+    self.stop.enabled = NO;
+    
+    [self justifyBackNext];
     
 }
 
@@ -105,7 +133,30 @@
 //        [Utils warningNotification:[error localizedDescription]];
 //    }
     [self.loading stopAnimating];
+    self.refresh.enabled = YES;
+    self.stop.enabled = NO;
+    
+    [self justifyBackNext];
 }
 
+-(IBAction)prevAction:(id)sender
+{
+    [self.contentWebView goBack];
+}
+
+-(IBAction)nextAction:(id)sender
+{
+    [self.contentWebView goForward];
+}
+
+-(IBAction)refreshAction:(id)sender
+{
+    [self.contentWebView reload];
+}
+
+-(IBAction)stopAction:(id)sender
+{
+    [self.contentWebView stopLoading];
+}
 
 @end

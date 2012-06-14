@@ -51,12 +51,14 @@
 				</object>
 				<bool key="IBUIOpaque">NO</bool>
 				<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
-				<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics"/>
+				<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics" id="500631248">
+					<int key="IBUIStatusBarStyle">2</int>
+				</object>
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 				<bool key="IBUIResizesToFullScreen">YES</bool>
 			</object>
 			<object class="IBUINavigationController" id="654806091">
-				<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics"/>
+				<reference key="IBUISimulatedStatusBarMetrics" ref="500631248"/>
 				<object class="IBUISimulatedOrientationMetrics" key="IBUISimulatedOrientationMetrics">
 					<int key="IBUIInterfaceOrientation">1</int>
 					<int key="interfaceOrientation">1</int>
@@ -78,7 +80,7 @@
 					<object class="IBUIViewController" id="552485000">
 						<object class="IBUINavigationItem" key="IBUINavigationItem" id="723142737">
 							<reference key="IBUINavigationBar"/>
-							<string key="IBUITitle">末日逃生指南</string>
+							<string key="IBUITitle">2012逃生指南</string>
 							<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						</object>
 						<reference key="IBUIParentViewController" ref="654806091"/>

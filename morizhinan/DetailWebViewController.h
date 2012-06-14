@@ -14,5 +14,7 @@
 @property (strong, nonatomic) NSString *htmlFileName;
 @property (strong, nonatomic) NSString *url;
 @property (strong, nonatomic) IBOutlet UIActivityIndicatorView *loading;
+@property (strong, nonatomic) IBOutlet UIToolbar *controlBar;
+@property (strong, nonatomic) IBOutlet UIBarItem *prev, *next, *refresh, *stop;
 
 @end

@@ -115,7 +115,7 @@
     
     NSDictionary *d = [self.disasters objectAtIndex:indexPath.row];
     
-    cell.imageView.image = [UIImage imageNamed:@"compassi.png"];
+    cell.imageView.image = [UIImage imageNamed:[d objectForKey:@"logo"]];
 //    cell.imageView.image = [UIImage imageNamed:[d objectForKey:@"logo"]];
     cell.textLabel.text = [d objectForKey:@"title"];
     cell.detailTextLabel.text = [d objectForKey:@"brief"];

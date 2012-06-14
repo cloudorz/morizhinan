@@ -2,135 +2,109 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>d1</key>
+	<key>volcanic</key>
 	<dict>
 		<key>no</key>
 		<integer>1</integer>
 		<key>title</key>
-		<string>d1</string>
+		<string>火山</string>
 		<key>brief</key>
-		<string>desc</string>
+		<string>火山在喷发之前常常活动增加，伴有隆隆声和蒸气与气体的溢</string>
 		<key>html</key>
-		<string>d1</string>
+		<string>volcanic_note</string>
 		<key>logo</key>
-		<string></string>
+		<string>volcanic_logo.png</string>
 	</dict>
-	<key>d2</key>
+	<key>quake</key>
 	<dict>
 		<key>no</key>
 		<integer>2</integer>
 		<key>title</key>
-		<string>d2</string>
+		<string>地震</string>
 		<key>brief</key>
-		<string>desc</string>
+		<string>地下水包括井水、泉水等。主要异常有发浑、冒泡、翻花、升温、变色、变味、突升、突降</string>
 		<key>html</key>
-		<string>d2</string>
+		<string>quake_note</string>
 		<key>logo</key>
-		<string></string>
+		<string>quake_logo.png</string>
 	</dict>
-	<key>d3</key>
+	<key>waterflood</key>
 	<dict>
 		<key>no</key>
 		<integer>3</integer>
 		<key>title</key>
-		<string>d3</string>
+		<string>洪水</string>
 		<key>brief</key>
-		<string>desc</string>
+		<string>当天气预报连续报有暴雨或大暴雨时，居住在河谷、低洼地带，</string>
 		<key>html</key>
-		<string>d3</string>
+		<string>waterflood_note</string>
 		<key>logo</key>
-		<string></string>
+		<string>waterflood_logo.png</string>
 	</dict>
-	<key>d4</key>
+	<key>exposure</key>
 	<dict>
 		<key>no</key>
 		<integer>4</integer>
 		<key>title</key>
-		<string>d4</string>
+		<string>辐射</string>
 		<key>brief</key>
-		<string>desc</string>
+		<string>尽快撤离被辐射的地区。通常政府会告诉我们哪些区域已经被辐射，</string>
 		<key>html</key>
-		<string>d4</string>
+		<string>exposure_note</string>
 		<key>logo</key>
-		<string></string>
+		<string>exposure_logo.png</string>
 	</dict>
-	<key>d5</key>
+	<key>tsunami</key>
 	<dict>
 		<key>no</key>
 		<integer>5</integer>
 		<key>title</key>
-		<string>d5</string>
+		<string>海啸</string>
 		<key>brief</key>
-		<string>desc</string>
+		<string>通俗来讲：鱼儿抢滩，海水翻滚。深海鱼浮上海滩等征兆可预报海啸。</string>
 		<key>html</key>
-		<string>d5</string>
+		<string>tsunami_note</string>
 		<key>logo</key>
-		<string></string>
+		<string>tsunami_logo.png</string>
 	</dict>
-	<key>d6</key>
+	<key>zombie</key>
 	<dict>
 		<key>no</key>
 		<integer>6</integer>
 		<key>title</key>
-		<string>d6</string>
+		<string>丧尸</string>
 		<key>brief</key>
-		<string>desc</string>
+		<string>行尸走肉丧尸围城在现实中并非不可能发生，病毒、细菌感染、化学毒剂扩散、</string>
 		<key>html</key>
-		<string>d6</string>
+		<string>zombie_note</string>
 		<key>logo</key>
-		<string></string>
+		<string>zombie_logo.png</string>
 	</dict>
-	<key>d7</key>
+	<key>sonwslide</key>
 	<dict>
 		<key>no</key>
 		<integer>7</integer>
 		<key>title</key>
-		<string>d7</string>
+		<string>雪崩</string>
 		<key>brief</key>
-		<string>desc</string>
+		<string>判断当时形势。出于本能，会直朝山下跑，但冰雪也向山下崩落。而且时速达到200公里。向</string>
 		<key>html</key>
-		<string>d7</string>
+		<string>sonwslide_note</string>
 		<key>logo</key>
-		<string></string>
+		<string>snowslide_logo.png</string>
 	</dict>
-	<key>d8</key>
+	<key>mudrockflow</key>
 	<dict>
 		<key>no</key>
 		<integer>8</integer>
 		<key>title</key>
-		<string>d8</string>
+		<string>泥石流</string>
 		<key>brief</key>
-		<string>desc</string>
+		<string>泥石流来临前，一般会出现巨大的响声、沟槽断流和沟水变浑等现象。</string>
 		<key>html</key>
-		<string>d8</string>
+		<string>mudrockflow_note</string>
 		<key>logo</key>
-		<string></string>
-	</dict>
-	<key>d9</key>
-	<dict>
-		<key>no</key>
-		<integer>9</integer>
-		<key>title</key>
-		<string>d9</string>
-		<key>brief</key>
-		<string>desc</string>
-		<key>html</key>
-		<string>d9</string>
-		<key>logo</key>
-		<string></string>
-	</dict>
-	<key>d10</key>
-	<dict>
-		<key>no</key>
-		<integer>10</integer>
-		<key>title</key>
-		<string>d10</string>
-		<key>brief</key>
-		<string>d10 desc</string>
-		<key>html</key>
-		<string>d10</string>
-		<key>logo</key>
-		<string></string>
+		<string>mudrockflow_logo.png</string>
 	</dict>
 </dict>
 </plist>

@@ -11,5 +11,6 @@
 @interface MRSkillCell : UITableViewCell
 
 @property (strong, nonatomic) UIButton *btnL, *btnM, *btnR;
+@property (strong, nonatomic) UILabel *titleL, *titleM, *titleR;
 
 @end

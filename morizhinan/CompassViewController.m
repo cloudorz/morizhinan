@@ -128,6 +128,8 @@
         direction = @"西";
     } else if (value > 292.5 && value <= 337.5) {
         direction = @"西北";
+    } else {
+        direction = @"";
     }
 
     return [NSString stringWithFormat:@"%@ %.0f°", direction, value];

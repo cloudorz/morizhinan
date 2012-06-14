@@ -80,7 +80,7 @@
         self.leftLabel = [[[UILabel alloc] initWithFrame:CGRectMake(2, 0, 70, 14)] autorelease];
         self.leftLabel.backgroundColor = [UIColor clearColor];
         self.leftLabel.textAlignment = UITextAlignmentCenter;
-        self.leftLabel.font = [UIFont systemFontOfSize:12.0f];
+        self.leftLabel.font = [UIFont systemFontOfSize:11.0f];
         self.leftLabel.textColor = [UIColor whiteColor];
         
         UIImageView *leftSide, *middleSide, *rightSide;
@@ -142,7 +142,7 @@
         self.middleLabel = [[[UILabel alloc] initWithFrame:CGRectMake(2, 0, 70, 14)] autorelease];
         self.middleLabel.backgroundColor = [UIColor colorWithRed:0/255.0 green:0/255.0 blue:0/255.0 alpha:0.4];
         self.middleLabel.textAlignment = UITextAlignmentCenter;
-        self.middleLabel.font = [UIFont systemFontOfSize:12.0f];
+        self.middleLabel.font = [UIFont systemFontOfSize:11.0f];
         self.middleLabel.textColor = [UIColor whiteColor];
         
         self.priceCoverM = [[[UIView alloc] initWithFrame:CGRectMake(-4, 10, 18, 20)] autorelease];
@@ -199,7 +199,7 @@
         self.rightLabel = [[[UILabel alloc] initWithFrame:CGRectMake(2, 0, 70, 14)] autorelease];
         self.rightLabel.backgroundColor = [UIColor colorWithRed:0/255.0 green:0/255.0 blue:0/255.0 alpha:0.4];
         self.rightLabel.textAlignment = UITextAlignmentCenter;
-        self.rightLabel.font = [UIFont systemFontOfSize:12.0f];
+        self.rightLabel.font = [UIFont systemFontOfSize:11.0f];
         self.rightLabel.textColor = [UIColor whiteColor];
         
         self.priceCoverR = [[[UIView alloc] initWithFrame:CGRectMake(-4, 10, 18, 20)] autorelease];

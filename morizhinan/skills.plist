@@ -2,115 +2,104 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>s1</key>
+	<key>sos</key>
 	<dict>
 		<key>no</key>
 		<integer>1</integer>
 		<key>logo</key>
-		<string></string>
+		<string>sos_logo.png</string>
 		<key>title</key>
-		<string>hah</string>
+		<string>发SOS信号</string>
 		<key>html</key>
-		<string>s1</string>
+		<string>sos_skill</string>
 	</dict>
-	<key>s2</key>
+	<key>direction</key>
 	<dict>
 		<key>no</key>
 		<integer>2</integer>
 		<key>logo</key>
-		<string></string>
+		<string>direction_logo.png</string>
 		<key>title</key>
-		<string></string>
+		<string>判断方向</string>
 		<key>html</key>
-		<string>s2</string>
+		<string>direction_skill</string>
 	</dict>
-	<key>s3</key>
+	<key>findwater</key>
 	<dict>
 		<key>no</key>
 		<integer>3</integer>
 		<key>logo</key>
-		<string></string>
+		<string>findwater_logo.png</string>
 		<key>title</key>
-		<string></string>
+		<string>荒野找水</string>
 		<key>html</key>
-		<string>s3</string>
+		<string>findwater_skill</string>
 	</dict>
-	<key>s4</key>
+	<key>zhayin</key>
 	<dict>
 		<key>no</key>
 		<integer>4</integer>
 		<key>logo</key>
-		<string></string>
+		<string>zhayin_logo.png</string>
 		<key>title</key>
-		<string></string>
+		<string>扎营</string>
 		<key>html</key>
-		<string>s4</string>
+		<string>zhayin_skill</string>
 	</dict>
-	<key>s5</key>
+	<key>fire</key>
 	<dict>
 		<key>no</key>
 		<integer>5</integer>
 		<key>logo</key>
-		<string></string>
+		<string>fire_logo.png</string>
 		<key>title</key>
-		<string></string>
+		<string>取火</string>
 		<key>html</key>
-		<string>s5</string>
+		<string>fire_skill</string>
 	</dict>
-	<key>s6</key>
+	<key>rengonghuxi</key>
 	<dict>
 		<key>no</key>
 		<integer>6</integer>
 		<key>logo</key>
-		<string></string>
+		<string>rengonghuxi_logo.png</string>
 		<key>title</key>
-		<string></string>
+		<string>人工呼吸</string>
 		<key>html</key>
-		<string></string>
+		<string>rengonghuxi_skill</string>
 	</dict>
-	<key>s7</key>
+	<key>xinzangfusu</key>
 	<dict>
 		<key>no</key>
 		<integer>7</integer>
 		<key>logo</key>
-		<string></string>
+		<string>xinzangfusu_logo.png</string>
 		<key>title</key>
-		<string></string>
+		<string>心脏复苏</string>
 		<key>html</key>
-		<string></string>
+		<string>xinzangfusu_skill</string>
 	</dict>
-	<key>s8</key>
+	<key>findfood</key>
 	<dict>
 		<key>no</key>
 		<integer>8</integer>
 		<key>logo</key>
-		<string></string>
+		<string>findfood_logo.png</string>
 		<key>title</key>
-		<string></string>
+		<string>寻找食物</string>
 		<key>html</key>
-		<string></string>
+		<string>findfood_skill</string>
 	</dict>
-	<key>s9</key>
+	<key>findsalt</key>
 	<dict>
 		<key>no</key>
 		<integer>9</integer>
 		<key>logo</key>
-		<string></string>
+		<string>findsalt_logo.png</string>
 		<key>title</key>
-		<string></string>
+		<string>寻找盐</string>
 		<key>html</key>
-		<string></string>
-	</dict>
-	<key>s10</key>
-	<dict>
-		<key>no</key>
-		<integer>10</integer>
-		<key>logo</key>
-		<string></string>
-		<key>title</key>
-		<string></string>
-		<key>html</key>
-		<string></string>
+		<string>findsalt_skill</string>
 	</dict>
 </dict>
 </plist>

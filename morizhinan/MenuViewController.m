@@ -14,6 +14,8 @@
 #import "SkillListViewController.h"
 #import "ItemListViewController.h"
 #import "DetailWebViewController.h"
+#import "InfoListViewController.h"
+#import "YouMiView.h"
 
 @interface MenuViewController ()
 
@@ -34,7 +36,34 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"menubg.png"]];
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"menubg.png"]];
+    
+    
+//    UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeInfoDark];
+//    [rightButton addTarget:self action:@selector(infoAction:) forControlEvents:UIControlEventTouchUpInside];
+//
+//    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightButton];
+
+    YouMiView *adView = [[[YouMiView alloc] initWithContentSizeIdentifier:YouMiBannerContentSizeIdentifier320x50 delegate:nil] autorelease];
+    CGRect adViewFrame = adView.frame;
+    adViewFrame.origin.y = 366;
+    adView.frame = adViewFrame;
+    adView.appID = @"0a77a3b5c8562132";
+    adView.appSecret = @"e05b767b93620b59";
+    adView.appVersion = @"1.0";
+    //设置文字广告的属性 
+    //adView.indicateBorder = NO; 
+    //adView.indicateTranslucency = YES; 
+    //adView.indicateRounded = NO;
+    //adView.indicateBackgroundColor 
+    //adView.textColor //adView.subTextColor
+    //添加对应的关键词
+    //[adView addKeyword:@"女性"]; 
+    //[adView addKeyword:@"19岁"];
+    adView.testing = NO;
+    [adView start];
+    [self.view addSubview:adView];
+    
 }
 
 - (void)viewDidUnload
@@ -80,7 +109,7 @@
 {
 //    NSLog(@"ticket action");
     DetailWebViewController *dwvc = [[DetailWebViewController alloc] initWithNibName:@"DetailWebViewController" bundle:nil];
-    dwvc.url = @"http://2012zhinan.sinaapp.com/ticket.php";
+    dwvc.url = @"http://2012zhinan.sinaapp.com/ticket";
     dwvc.navigationItem.title = @"领取船票";
     [self.navigationController pushViewController:dwvc animated:YES];
     [dwvc release];
@@ -117,6 +146,14 @@
 //{
 //    NSLog(@"share");
 //}
+
+-(IBAction)infoAction:(id)sender
+{
+    NSLog(@"info action");
+    InfoListViewController *ilvc = [[InfoListViewController alloc] initWithNibName:@"InfoListViewController" bundle:nil];
+    [self.navigationController pushViewController:ilvc animated:YES];
+    [ilvc release];
+}
 
 -(IBAction)storyAction:(id)sender
 {
