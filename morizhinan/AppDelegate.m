@@ -30,6 +30,8 @@
 //    // Override point for customization after application launch.
 //    self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    [MobClick startWithAppkey:UMKEY reportPolicy:REALTIME channelId:nil];
+    [MobClick updateOnlineConfig];
     return YES;
 }
 

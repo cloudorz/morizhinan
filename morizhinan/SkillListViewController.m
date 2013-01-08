@@ -8,7 +8,7 @@
 
 #import "SkillListViewController.h"
 #import "MRSkillCell.h"
-#import "DetailWebViewController.h"
+#import "SkillDetailViewController.h"
 #import "CustomBarButtonItem.h"
 
 @interface SkillListViewController ()
@@ -163,14 +163,11 @@
     return cell;
 }
 
--(void)skillBtnAction:(id)sender
+-(void)skillBtnAction:(UIButton *)btn
 {
-    UIButton *btn = (UIButton *)sender;
     
-    DetailWebViewController *dwvc = [[DetailWebViewController alloc] initWithNibName:@"DetailWebViewController" bundle:nil];
-    NSDictionary *s = [self.skills objectAtIndex:btn.tag];
-    dwvc.htmlFileName = [s objectForKey:@"html"];
-    dwvc.navigationItem.title = [s objectForKey:@"title"];
+    SkillDetailViewController *dwvc = [[SkillDetailViewController alloc] initWithNibName:@"SkillDetailViewController" bundle:nil];
+    dwvc.skillDetail = [self.skills objectAtIndex:btn.tag];
     [self.navigationController pushViewController:dwvc animated:YES];
     [dwvc release];
 

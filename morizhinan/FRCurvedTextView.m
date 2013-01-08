@@ -283,7 +283,7 @@
 
 - (NSString*) textFont {
     if (!textFont) {
-        self.textFont = [NSString stringWithString:@"Arial Rounded MT Bold"];
+        self.textFont = @"Arial Rounded MT Bold";
         setupRequired = YES;
         [self setNeedsDisplay];
     }

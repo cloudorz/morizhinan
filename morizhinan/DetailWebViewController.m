@@ -11,6 +11,7 @@
 
 @interface DetailWebViewController ()
 -(void)justifyBackNext;
+- (UIScrollView *)defaultScrollView;
 @end
 
 @implementation DetailWebViewController
@@ -48,8 +49,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    self.contentWebView.scrollView.alwaysBounceHorizontal = NO;
-    self.contentWebView.scrollView.alwaysBounceVertical = NO;
+    UIScrollView *uscl = [self defaultScrollView];
+    
+    uscl.alwaysBounceHorizontal = NO;
+    uscl.alwaysBounceVertical = NO;
     
     [self.loading stopAnimating];
     
@@ -57,6 +60,29 @@
     self.navigationItem.leftBarButtonItem = [[[CustomBarButtonItem alloc] initBackBarButtonItemWithTarget:self action:@selector(backAction:)] autorelease];
 
 }
+
+- (UIScrollView *)defaultScrollView 
+{
+    UIScrollView *scrollView = nil;
+    
+    NSString *currSysVer = [[UIDevice currentDevice] systemVersion];
+    if ([currSysVer compare:@"5.0" options:NSNumericSearch] != NSOrderedAscending) {
+        scrollView = self.contentWebView.scrollView;
+    } else {
+        for (UIView *subview in [self.contentWebView subviews]) {
+            if ([subview isKindOfClass:[UIScrollView class]]) {
+                scrollView = (UIScrollView *)subview;
+                break;
+            }
+        }
+        
+        if (scrollView == nil) {
+            NSLog(@"Couldn’t get default scrollview!");
+        }
+    }
+    return scrollView;
+}
+
 
 -(void)backAction:(id)sender
 {

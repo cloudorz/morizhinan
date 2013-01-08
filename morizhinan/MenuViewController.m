@@ -16,6 +16,7 @@
 #import "DetailWebViewController.h"
 #import "InfoListViewController.h"
 #import "YouMiView.h"
+#import "UMFeedback.h"
 
 @interface MenuViewController ()
 
@@ -36,7 +37,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"menubg.png"]];
+//    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"menubg.png"]];
     
     
 //    UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeInfoDark];
@@ -60,9 +61,13 @@
     //添加对应的关键词
     //[adView addKeyword:@"女性"]; 
     //[adView addKeyword:@"19岁"];
+//    adView.channelID = @"91Store";
     adView.testing = NO;
     [adView start];
     [self.view addSubview:adView];
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeInfoDark];
+    [btn addTarget:self action:@selector(infoAction:) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.rightBarButtonItem = [[[UIBarButtonItem alloc] initWithCustomView:btn] autorelease];
     
 }
 
@@ -149,10 +154,8 @@
 
 -(IBAction)infoAction:(id)sender
 {
-    NSLog(@"info action");
-    InfoListViewController *ilvc = [[InfoListViewController alloc] initWithNibName:@"InfoListViewController" bundle:nil];
-    [self.navigationController pushViewController:ilvc animated:YES];
-    [ilvc release];
+    
+    [UMFeedback showFeedback:self withAppkey:UMKEY];
 }
 
 -(IBAction)storyAction:(id)sender

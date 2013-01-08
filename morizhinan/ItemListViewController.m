@@ -235,6 +235,8 @@
 {
     UIButton *btn = (UIButton *)sender;
     
+    [MobClick event:@"click_buy" acc:1];
+    
     DetailWebViewController *dwvc = [[DetailWebViewController alloc] initWithNibName:@"DetailWebViewController" bundle:nil];
     NSDictionary *i = [self.items objectAtIndex:btn.tag];
     dwvc.url = [i objectForKey:@"item_url"];
